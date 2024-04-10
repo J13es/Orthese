@@ -20,8 +20,8 @@
 
 EMGFilters myFilter; // Crée une instance de la classe EMGFilters
 
-int sampleRate = SAMPLE_FREQ_1000HZ; // Taux d'échantillonnage à 1000 Hz
-int humFreq = NOTCH_FREQ_50HZ; // Fréquence du réseau électrique à 50 Hz
+SAMPLE_FREQUENCY sampleRate = SAMPLE_FREQ_1000HZ; // Taux d'échantillonnage à 1000 Hz
+NOTCH_FREQUENCY humFreq = NOTCH_FREQ_50HZ; // Fréquence du réseau électrique à 50 Hz
 
 static int Threshold = 0; // Seuil de détection de l'EMG, modifier à la valeur maximal du test, toute valeur inférieur à cette valeur sera considérée comme un 0
 
