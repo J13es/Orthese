@@ -10,6 +10,7 @@ void setup() {
 
 void loop() {
   // Activation du moteur dans un sens pendant 2 secondes
+  analogWrite(R_PWM, 0); //on s'assure que ce soit à 0 sur le côté droit
   analogWrite(L_PWM, 255);  // Active le moteur à pleine vitesse vers la gauche (255 est la valeur maximale)
 
   delay(2000);  // Attend 2 secondes
@@ -20,6 +21,7 @@ void loop() {
   delay(1000);  // Attend 1 seconde
 
   // Activation du moteur dans l'autre sens pendant 2 secondes
+  analogWrite(L_PWM, 0); //On s'assure que ce soit à 0 du côté gauche
   analogWrite(R_PWM, 255);  // Active le moteur à pleine vitesse vers la droite
 
   delay(2000);  // Attend 2 secondes
