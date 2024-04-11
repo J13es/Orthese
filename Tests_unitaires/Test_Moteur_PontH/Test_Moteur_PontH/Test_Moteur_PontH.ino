@@ -1,6 +1,6 @@
 // Définition des broches connectées au pont en H
-const int L_PWM = 8;  // Broche pour activer le moteur vers la gauche
-const int R_PWM = 9; //Broche pour activer le moteur vers la droite
+const int L_PWM = 11;  // Broche pour activer le moteur vers la gauche
+const int R_PWM = 10; //Broche pour activer le moteur vers la droite
 
 void setup() {
   // Initialisation des broches en tant que sorties
